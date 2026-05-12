@@ -40,6 +40,36 @@ A **Design Pattern** describes a solution to a *typical* software problem.  A pa
 - **Composition** - used when we wish to treat a pair or collection of values as a single object.  
 - **Template Method** - an abstract base class provides a concrete behavior that relies upon calls to other abstract behaviors.  
 
+## Object-Oriented Software Design  
+**Responsibilities** - Divide the work into different actors, each with a different responsibility.  
+**Independence** - Define the work for each class to be as independent from other classes as possible.  
+**Behaviors** - Define the behaviors for each class carefully and precisely, so that the consequences of each action performed by a class will be well understood by other classes that interact with it.  
 
+## Unified Modeling Language (UML)  
+A **class diagram** has three portions.
+- The name of the class  
+- The recommended instance variables  
+- The recommended methods of the class.  
 
+![Figure 2.01](Images/Fig2_01.png)
 
+## Class Definitions  
+A class serves as the primary means for abstraction in object-oriented programming.  
+In Java, every variable is either a base type or is a reference to an instance of some class.  
+A class provides a set of behaviors in the form of member functions (also known as **methods**), with implementations that belong to all its instances.  
+A class also serves as a blueprint for its instances, effectively determining the way that state information for each instance is represented in the form of **attributes** (also known as **fields, instance variables** or **data members**).
+
+## Constructors  
+A user can create an instance of a class by using the **new** operator with a method that has the same name as the class.  
+Such a method, known as a **constructor**, has as its responsibility to establish the state of a newly created object with appropriate initial values for its instance variables.  
+
+## Inheritance  
+A mechanism for a modular an hierarchical organization is **inheritance**.  
+This allows a new class to be defined based upon an existing class as the starting point.  
+The existing class is typically described as the **base class**, parent class or superclass, while the newly defined class is known as the **subclass** or child class.  
+There are two ways in which a subclass can differentiate itself from its superclass:  
+- A subclass may specialie an existing behavior by providing a new implementation that overrides an existing method.  
+- A subclass may also extend its superclass by providing brand new methods.  
+
+This is an example of an UML diagram that serves as an overview of our design for the new *PredatoryCreditCard* class as a subclass of the existing *CreditCard* class.  
+![Figure 2.02](Images/Fig2_02.png)
