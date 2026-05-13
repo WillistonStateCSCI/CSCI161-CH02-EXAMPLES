@@ -73,3 +73,5 @@ There are two ways in which a subclass can differentiate itself from its supercl
 
 This is an example of an UML diagram that serves as an overview of our design for the new *PredatoryCreditCard* class as a subclass of the existing *CreditCard* class.  
 ![Figure 2.02](Images/Fig2_02.png)
+
+## Inheritance and Constructors  
