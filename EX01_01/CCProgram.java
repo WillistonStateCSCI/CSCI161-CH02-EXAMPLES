@@ -21,17 +21,12 @@ public class CCProgram {
         }
 
         PredatoryCreditCard[] group = new PredatoryCreditCard[3];
-        group[0] = new PredatoryCreditCard("John Bowman", "California Savings", "5931 0375 9387 5309", 5000);
-        group[1] = new CreditCard("John Bowman", "California Federal", "3485 0399 3395 1954", 3500);
-        group[2] = new CreditCard("John Bowman", "California Finance", "5391 0375 9387 5309", 2500, 300);
+        group[0] = new PredatoryCreditCard("John Bowman", "California Savings", "5931 0375 9387 5309", 5000, 500, .03);
+        group[1] = new PredatoryCreditCard("John Bowman", "California Federal", "3485 0399 3395 1954", 3500, 500, .05);
+        group[2] = new PredatoryCreditCard("John Bowman", "California Finance", "5391 0375 9387 5309", 2500, 300, .01);
 
-        for(PredatoryCreditCard card : wallet){
+        for(PredatoryCreditCard card :group){
             PredatoryCreditCard.printSummary(card); // calling static method
-            while(card.getBalance()>200){
-                card.processMonth();
-                System.out.println("New balance = "+card.getBalance());
             }
         }
     }
-
-}

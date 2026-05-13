@@ -1,5 +1,3 @@
-package EX01_10;
-
 public class CreditCard {
     // Instance variables;
     private String customer;  // name of the customer
