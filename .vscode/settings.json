@@ -1,9 +1,10 @@
 {
     "java.project.sourcePaths": [
+        "EX2_04",
         "EX2_03",
         "EX2_02",
         "EX2_01",
-        "EX2_04"
+        "EX2_05"
     ],
     "java.project.referencedLibraries": []
 }
