@@ -91,3 +91,14 @@ A **numeric progression** is a sequence o fnumbers, where each number depends on
 - A **geometric progression** determines the next number by multiplying the previous value by a fixed constant.  [Click Here](EX2_04/GeometricProgression.java) to see this example.
 - A **Fibonacci progression** uses the formula $N_{i+1}=N_i+N_{i-1}$  
 
+A detailed inheritance diagram for **Progression** and its subclasses is shown below:  
+![Figure 2.03](Images/Fig2_03.png)
+
+## Interfaces and Abstract Classes  
+**Note:** The main structural element in Java that enforces an API is an **interface**.  An interface is a collection of method declarations with no data and no bodies.  That is, the methods of an interface are always empty;  they are simply method signatures.  Interfaces do not have constructors and they cannot be directly instantiated.  When a class implements an interface, it must implement **ALL** of the methods declared in the interface.  
+
+In this way, interfaces enforce rewirements that an implementing class has methods with certain specified signatures.
+
+[Click Here](EX2_06/Sellable.java) to view the Sellable interface, the Photograph class, and the PhotographClient program.  
+
+##

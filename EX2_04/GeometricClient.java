@@ -1,6 +1,6 @@
 //This is an extra example created to demonstrate the Progression Class
 
-public class ProgressionClient {
+public class GeometricClient {
     public static void main(String[] args) {
         System.out.println("Creating a progression starting at 1:");
         GeometricProgression prog = new GeometricProgression(); //Creates a progression starting at 0.
