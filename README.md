@@ -75,3 +75,9 @@ This is an example of an UML diagram that serves as an overview of our design fo
 ![Figure 2.02](Images/Fig2_02.png)
 
 ## Inheritance and Constructors  
+Constructors are never inherited in Java; hence, every class musth define a constructor for itself.  
+- All of its fields mus be properly initialized, including any inherited fields.  
+
+The first operation within the body of the constructor must be to invoke a constructor of the superclass which initializes the fields defined in the superclass.  
+A constructor of the superclass is invoked explicitly by using the keyword **super** with appropriate parameters.  
+If a constructor for a subclass does not make an explicit call to **super** or **this** as its first command, then an implicit call to **super()**, the zero-parameter version of the superclass constructor, will be made.  
