@@ -1,5 +1,5 @@
 //Code Fragment 2.4 from textbook
-public class GeometricProgression {
+public class GeometricProgression extends Progression{
     protected long base;
 
     /* Constructs progression 1, 2, 4, 8, 16, ... */
