@@ -170,3 +170,18 @@ To avoid problem such as this, java provides an operator called **instanceOf**, 
 ![Figure 2.07](Images/Fig2_07.png) 
 
 ## Generics  
+Java includes support for writing generic classes and methods that cna operate on a variety of data types while often avoiding th eneed for explicit casts.  
+The generics framework allows us to define a class in terms of a set of formal type parameters, which can then be used as the declared type for variables, parameters, and return values within the class definition.  
+Those formal type parameters are later specified when using the generic class as a type elsewhere in a program.  
+
+## Syntax for Generics  
+Types can be declared using generic names as shown below:  
+![Figure 2.08](Images/Fig2_08.png)  
+They are then instantiated using actual types:  Pair<String, Double> bid;
+
+## Nested Classes  
+Java allows a class definition to be nested inside the definition of another class.  
+The main use for nesting classes is when defining a class that is strongly affiliated with another class.  
+- This can help increase encapsulation and reduce undesired name conflicts.  
+
+Nested classes are a valuable technique when implementing data structures, as an instance of a nested use can be used to represent a small portion of a larger data structure, or an auxiliary class that helps navigate a primary data structure.  
