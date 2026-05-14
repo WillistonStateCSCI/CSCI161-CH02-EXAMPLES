@@ -118,6 +118,8 @@ If it **throws** an exception, then that exception is caught by having the flow 
 If no exception occurs in the guarded code, all **catch** blocks are ignored.  
 
 ![Figure 2.04](Images/Fig2_04.png)  
+  
+[Click Here](EX2_08/tryCatch.class) to see try-catch in action.  
 
 ## Throwing Exceptions  
 Exceptions originate when a piece of Java code finds some sort of problem during execution and throws an exception object.  
@@ -130,3 +132,41 @@ The syntax for declaring possibl eexceptions in a method signature relies on the
 For example, the parseInt method of the Integer class has the following formal signature:  
 - public static int parseInt(String s) throws NumberFormatException;
 
+## Java's Exception Hierarchy  
+Provided for your reference.  
+![Figure 2.05](Images/Fig2_05.png)  
+
+All subtypes of **Runtime Exception** are officially treated as **Unchecked Exceptions**, and any exception type that is not part of the **Runtime Exception** is a **Checked Exception**.  
+
+The designation between checked and unchecked exceptions plays a significant role in the language.  In particular, **all checked exceptions that might propagate upward from a method must be explicitly declared in its signature.**  
+
+In this class we will rely entirely on existing **Runtime Exception** types.  
+
+## Casting
+Casting with Objects allows for conversion between classes and subclasses.  
+A **widening conversion occurs when a type T is converted into a "wider" type U:  
+- T and U are class types an U is a superclass of T.
+- T and U are interface types and U is a superinterface of T.  
+- T is a class that implements interface U.  
+
+**Example:**  CreditCard card = new PredatoryCreditCard(...);
+
+## Narrowing Conversions  
+A **narrowing conversion** occurs when a type T is converted into a "narrower" type S.  
+- T and S are class types and S is a subclass of T.  
+- T and S are interface types and S is a subinterface of T.  
+- T is an interface implemented by class S.  
+
+In general, a narrowing conversion of reference types requires an explicit cast.
+
+**Example:** PredatoryCreditCard pc = (PredatoryCreditCard) card;
+
+## Casting Exceptions  
+We can only cast an object reference o of type T into a type S, provided the object o is actually of type S.
+Otherwise a *ClassCastException* will be thrown.  See the example below:  
+![Figure 2.06](Images/Fig2_06.png)  
+
+To avoid problem such as this, java provides an operator called **instanceOf**, demonstrated below:  
+![Figure 2.07](Images/Fig2_07.png) 
+
+## Generics  
