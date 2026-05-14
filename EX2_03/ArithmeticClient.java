@@ -10,5 +10,7 @@ public class ArithmeticClient {
         System.out.println();
 
         //Need to add demos of other methods
+        ArithmeticProgression prog2 = new ArithmeticProgression(5); //Creates a progression with stepsize 5;
+        
     }
 }
