@@ -102,7 +102,8 @@ In this way, interfaces enforce rewirements that an implementing class has metho
 [Click Here](EX2_06/Sellable.java) to view the Sellable interface, the Photograph class, and the PhotographClient program.  
 
 ## Abstract Classes  
-need to add
+An abstract class cannot be instantiated.  The constructors can be invoked within the subclass constructors using the *super* keyword.
+[Click Here](EX2_07/AbstractProgression.java) to see the Progression class modified to be an Abstract class.
 
 ## Exceptions  
 Exceptions are unexpected events that occur during the execution of a program.  
