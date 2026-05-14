@@ -1,3 +1,4 @@
+//Code Fragment 2.2 in Textbook
 /*This program generates a simple progression.  By default: 0, 1, 2, ... */
 public class Progression {
     // instance variable
