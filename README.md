@@ -112,3 +112,21 @@ In Java, exceptions are objects that can be **thrown** by surrounding code that 
 An exception may also be **caught** by a surrounding block of code that "handles" the problem.  
 If uncaught, an exception causes the virtual machine to stop executing th eprogram and to report an appropriate message to the console.  
 
+## Catching Exceptions  
+The general methodology for handling exceptions is a **try-catch** construct in which a guarded fragment of code that might throw an exception is executed.  
+If it **throws** an exception, then that exception is caught by having the flow of control jump to a predefined **catch** block that contains the code to apply an appropriate resolution.  
+If no exception occurs in the guarded code, all **catch** blocks are ignored.  
+
+![Figure 2.04](Images/Fig2_04.png)  
+
+## Throwing Exceptions  
+Exceptions originate when a piece of Java code finds some sort of problem during execution and throws an exception object.  
+This is done by using the **throw** keyword followed by an instance of the exception type to be thrown.  
+It is often convenient to instantiate an exception object at the same time the exception has to be thrown.  Thus, a throw statement is typically written as follows:  **throw new** exceptionType(parameters); where exceptionType is the type of the exception and the parameters ar sent to that type's constructor.  
+
+## The throws Clause  
+When a method is declared, it is possible to explicitly declare, as part of its signature, the possiblity that a particular exception type may be thrown during a call to that method.  
+The syntax for declaring possibl eexceptions in a method signature relies on the keyword **throws** (not to be confused with an actual **throw** statement).  
+For example, the parseInt method of the Integer class has the following formal signature:  
+- public static int parseInt(String s) throws NumberFormatException;
+
