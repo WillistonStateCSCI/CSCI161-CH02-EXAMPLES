@@ -74,6 +74,8 @@ There are two ways in which a subclass can differentiate itself from its supercl
 This is an example of an UML diagram that serves as an overview of our design for the new *PredatoryCreditCard* class as a subclass of the existing *CreditCard* class.  
 ![Figure 2.02](Images/Fig2_02.png)
 
+[Click Here](EX2_01/CreditCard.java) or navigate to the EX2_01 folder to take a look at the *PredatoryCreditCard.java* subclass.
+
 ## Inheritance and Constructors  
 Constructors are never inherited in Java; hence, every class musth define a constructor for itself.  
 - All of its fields mus be properly initialized, including any inherited fields.  
@@ -81,3 +83,10 @@ Constructors are never inherited in Java; hence, every class musth define a cons
 The first operation within the body of the constructor must be to invoke a constructor of the superclass which initializes the fields defined in the superclass.  
 A constructor of the superclass is invoked explicitly by using the keyword **super** with appropriate parameters.  
 If a constructor for a subclass does not make an explicit call to **super** or **this** as its first command, then an implicit call to **super()**, the zero-parameter version of the superclass constructor, will be made.  
+
+## An Extended Example  
+A **numeric progression** is a sequence o fnumbers, where each number depends on one or more of the previous numbers.  
+- An **arithmetic progression** determines the next number by adding a fixed constant to the previous value.  
+- A **geometric progression** determines the next number by multiplying the previous value by a fixed constant.  
+- A **Fibonacci progression** uses the formula $N_{i+1}=N_i+N_{i-1}$  
+
