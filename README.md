@@ -94,11 +94,20 @@ A **numeric progression** is a sequence o fnumbers, where each number depends on
 A detailed inheritance diagram for **Progression** and its subclasses is shown below:  
 ![Figure 2.03](Images/Fig2_03.png)
 
-## Interfaces and Abstract Classes  
+## Interfaces
 **Note:** The main structural element in Java that enforces an API is an **interface**.  An interface is a collection of method declarations with no data and no bodies.  That is, the methods of an interface are always empty;  they are simply method signatures.  Interfaces do not have constructors and they cannot be directly instantiated.  When a class implements an interface, it must implement **ALL** of the methods declared in the interface.  
 
 In this way, interfaces enforce rewirements that an implementing class has methods with certain specified signatures.
 
 [Click Here](EX2_06/Sellable.java) to view the Sellable interface, the Photograph class, and the PhotographClient program.  
 
-##
+## Abstract Classes  
+need to add
+
+## Exceptions  
+Exceptions are unexpected events that occur during the execution of a program.  
+An exceptiom might result due to an unavailable resource, unexpected input from a user, or simply a logical error on the part of the programmer.  
+In Java, exceptions are objects that can be **thrown** by surrounding code that encounters an unexpected situation.  
+An exception may also be **caught** by a surrounding block of code that "handles" the problem.  
+If uncaught, an exception causes the virtual machine to stop executing th eprogram and to report an appropriate message to the console.  
+
