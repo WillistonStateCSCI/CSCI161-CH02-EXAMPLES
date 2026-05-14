@@ -86,6 +86,7 @@ If a constructor for a subclass does not make an explicit call to **super** or *
 
 ## An Extended Example  
 A **numeric progression** is a sequence o fnumbers, where each number depends on one or more of the previous numbers.  
+[Click Here](/workspaces/CSCI161-CH02-EXAMPLES/EX2_02/Progression.java) or navigate to the EX2_02 folder to work with a simple progression.
 - An **arithmetic progression** determines the next number by adding a fixed constant to the previous value.  
 - A **geometric progression** determines the next number by multiplying the previous value by a fixed constant.  
 - A **Fibonacci progression** uses the formula $N_{i+1}=N_i+N_{i-1}$  
